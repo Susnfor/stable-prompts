@@ -5,6 +5,10 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  max-height: 100vh;
+  top: 0;
+  padding: 0;
+  text-align: center;
 
   @include small-break {
     margin: 0;

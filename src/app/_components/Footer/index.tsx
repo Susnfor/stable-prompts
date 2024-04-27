@@ -25,15 +25,17 @@ export async function Footer() {
 
   return (
     <footer className={classes.footer}>
-      <Gutter className={classes.wrap}>
+      {/* <Gutter className={classes.wrap}> */}
+      <div className={classes.wrap}>
         <Link href="/">
-          <picture>
+          {/* <picture>
             <img
               className={classes.logo}
               alt="Payload Logo"
               src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
             />
-          </picture>
+          </picture> */}
+          <p className={classes.logoname}>StablePrompts</p>
         </Link>
         <nav className={classes.nav}>
           <ThemeSelector />
@@ -52,7 +54,8 @@ export async function Footer() {
             Payload
           </Link>
         </nav>
-      </Gutter>
+      </div>
+      {/* </Gutter> */}
     </footer>
   )
 }

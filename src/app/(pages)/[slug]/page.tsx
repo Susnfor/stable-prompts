@@ -53,19 +53,11 @@ export default async function Page({ params: { slug = 'home' } }) {
 
   return (
     <React.Fragment>
-      {slug === 'home' ? (
-        <Gutter>
-          <Hero {...hero} />
-        </Gutter>
-      ) : (
-        <>
-          <Hero {...hero} />
-          <Blocks
-            blocks={layout}
-            disableTopPadding={!hero || hero?.type === 'none' || hero?.type === 'lowImpact'}
-          />
-        </>
-      )}
+      <Hero {...hero} />
+      <Blocks
+        blocks={layout}
+        disableTopPadding={!hero || hero?.type === 'none' || hero?.type === 'lowImpact'}
+      />
     </React.Fragment>
   )
 }
