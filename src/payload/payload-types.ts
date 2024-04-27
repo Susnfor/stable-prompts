@@ -495,7 +495,7 @@ export interface Header {
 export interface Footer {
   id: string,
   copyright: string,
-  // theme?: string | null,
+  theme: string,
   navItems?:
     | {
         link: {

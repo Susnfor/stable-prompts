@@ -38,7 +38,7 @@ export async function Footer() {
           <p className={classes.logoname}>StablePrompts</p>
         </Link>
         <p>{footer.copyright}</p>
-        {/* {footer.theme && footer.theme !== null ? <ThemeSelector /> : ''} */}
+        {footer.theme === 'true' ? <ThemeSelector /> : ''}
         {/* <nav className={classes.nav}>
           <ThemeSelector />
           {navItems.map(({ link }, i) => {

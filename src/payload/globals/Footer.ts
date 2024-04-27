@@ -14,21 +14,21 @@ export const Footer: GlobalConfig = {
       type: 'text',
       required: true,
     },
-    // {
-    //   name: 'theme',
-    //   type: 'radio',
-    //   options: [
-    //     {
-    //       label: 'Hide',
-    //       value: 'false',
-    //     },
-    //     {
-    //       label: 'Show',
-    //       value: 'true',
-    //     },
-    //   ],
-    //   defaultValue: 'false',
-    // },
+    {
+      name: 'theme',
+      label: 'Theme',
+      type: 'radio',
+      options: [
+        {
+          label: 'Hide',
+          value: 'false',
+        },
+        {
+          label: 'Show',
+          value: 'true',
+        },
+      ],
+    },
     {
       name: 'navItems',
       type: 'array',
