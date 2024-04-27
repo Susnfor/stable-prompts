@@ -9,6 +9,27 @@ export const Footer: GlobalConfig = {
   },
   fields: [
     {
+      name: 'copyright',
+      label: 'Copyright',
+      type: 'text',
+      required: true,
+    },
+    // {
+    //   name: 'theme',
+    //   type: 'radio',
+    //   options: [
+    //     {
+    //       label: 'Hide',
+    //       value: 'false',
+    //     },
+    //     {
+    //       label: 'Show',
+    //       value: 'true',
+    //     },
+    //   ],
+    //   defaultValue: 'false',
+    // },
+    {
       name: 'navItems',
       type: 'array',
       maxRows: 6,

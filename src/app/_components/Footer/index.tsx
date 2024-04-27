@@ -37,7 +37,9 @@ export async function Footer() {
           </picture> */}
           <p className={classes.logoname}>StablePrompts</p>
         </Link>
-        <nav className={classes.nav}>
+        <p>{footer.copyright}</p>
+        {/* {footer.theme && footer.theme !== null ? <ThemeSelector /> : ''} */}
+        {/* <nav className={classes.nav}>
           <ThemeSelector />
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
@@ -53,7 +55,7 @@ export async function Footer() {
           <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
             Payload
           </Link>
-        </nav>
+        </nav> */}
       </div>
       {/* </Gutter> */}
     </footer>
