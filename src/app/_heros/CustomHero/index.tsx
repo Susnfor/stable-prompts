@@ -31,7 +31,7 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
           <Fragment>
             <Media
               resource={media}
-            //   fill
+              //   fill
               imgClassName={classes.image}
               priority
             />
@@ -39,7 +39,7 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
           </Fragment>
         )}
       </div>
-      </div>
+    </div>
     // </Gutter>
   )
 }
