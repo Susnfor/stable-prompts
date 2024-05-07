@@ -37,6 +37,15 @@ export const hero: Field = {
           label: 'Custom Hero',
           value: 'customHero',
         },
+        {
+          label: 'Side by Side Hero',
+          value: 'sideCustomHero',
+        },
+        {
+          label: 'Side by Side with Border Hero',
+          value: 'sideBorderCustomHero',
+        },
+
       ],
     },
     richText({
@@ -58,7 +67,7 @@ export const hero: Field = {
       admin: {
         //show media field under these conditions
         // eslint-disable-next-line prettier/prettier
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'customHero'].includes(type),
+        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'customHero', 'sideCustomHero', 'sideBorderCustomHero'].includes(type),
       },
     },
   ],

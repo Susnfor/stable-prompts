@@ -6,12 +6,16 @@ import { HighImpactHero } from '../../_heros/HighImpact'
 import { LowImpactHero } from '../../_heros/LowImpact'
 import { MediumImpactHero } from '../../_heros/MediumImpact'
 import { CustomHero } from '../../_heros/CustomHero'
+import { SideCustomHero } from '../../_heros/SideCustomHero'
+import { SideBorderCustomHero } from '../../_heros/SideBorderCustomHero'
 
 const heroes = {
   highImpact: HighImpactHero,
   mediumImpact: MediumImpactHero,
   lowImpact: LowImpactHero,
   customHero: CustomHero,
+  sideCustomHero: SideCustomHero,
+  sideBorderCustomHero: SideBorderCustomHero,
 }
 
 export const Hero: React.FC<Page['hero']> = props => {
