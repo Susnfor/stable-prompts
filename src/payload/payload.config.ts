@@ -76,6 +76,7 @@ export default buildConfig({
       }
     },
   },
+  // slate editor
   editor: slateEditor({}),
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
