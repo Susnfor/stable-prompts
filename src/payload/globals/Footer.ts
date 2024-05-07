@@ -12,23 +12,23 @@ export const Footer: GlobalConfig = {
       name: 'copyright',
       label: 'Copyright',
       type: 'text',
-      required: true,
+      required: false,
     },
-    {
-      name: 'theme',
-      label: 'Theme',
-      type: 'radio',
-      options: [
-        {
-          label: 'Hide',
-          value: 'false',
-        },
-        {
-          label: 'Show',
-          value: 'true',
-        },
-      ],
-    },
+    // {
+    //   name: 'theme',
+    //   label: 'Theme',
+    //   type: 'radio',
+    //   options: [
+    //     {
+    //       label: 'Hide',
+    //       value: 'false',
+    //     },
+    //     {
+    //       label: 'Show',
+    //       value: 'true',
+    //     },
+    //   ],
+    // },
     {
       name: 'navItems',
       type: 'array',

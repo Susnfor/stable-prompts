@@ -33,10 +33,6 @@ export const hero: Field = {
           label: 'Low Impact',
           value: 'lowImpact',
         },
-        {
-          label: 'Custom Hero',
-          value: 'customImpact',
-        },
       ],
     },
     richText({
@@ -58,7 +54,7 @@ export const hero: Field = {
       admin: {
         //show media field under these conditions
         // eslint-disable-next-line prettier/prettier
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'customImpact'].includes(type),
+        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
       },
     },
   ],

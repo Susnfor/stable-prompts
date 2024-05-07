@@ -37,7 +37,7 @@ export interface Page {
   title: string
   publishedOn?: string | null
   hero: {
-    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact' | 'customImpact' 
+    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact' 
     richText: {
       [k: string]: unknown
     }[]
@@ -494,8 +494,7 @@ export interface Header {
 }
 export interface Footer {
   id: string,
-  copyright: string,
-  theme: string,
+  copyright?: string,
   navItems?:
     | {
         link: {

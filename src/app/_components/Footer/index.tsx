@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { Footer } from '../../../payload/payload-types'
 import { fetchFooter, fetchGlobals } from '../../_api/fetchGlobals'
-import { ThemeSelector } from '../../_providers/Theme/ThemeSelector'
+// import { ThemeSelector } from '../../_providers/Theme/ThemeSelector'
 import { Gutter } from '../Gutter'
 import { CMSLink } from '../Link'
 
@@ -38,7 +38,7 @@ export async function Footer() {
           <p className={classes.logoname}>StablePrompts</p>
         </Link>
         <p>{footer.copyright}</p>
-        {footer.theme === 'true' ? <ThemeSelector /> : ''}
+        {/* {footer.theme === 'true' ? <ThemeSelector /> : ''} */}
         {/* <nav className={classes.nav}>
           <ThemeSelector />
           {navItems.map(({ link }, i) => {
