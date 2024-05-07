@@ -2,9 +2,13 @@
 
 .header {
   padding: var(--base) 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
