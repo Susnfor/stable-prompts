@@ -1,8 +1,7 @@
 @use '../../_css/queries.scss' as *;
 
 .footer {
-  padding: calc(var(--base) * 4) 0;
-  padding: 10px;
+  padding: var(--base) 0;
   background-color: var(--theme-elevation-1000);
   color: var(--theme-elevation-0);
 
@@ -23,8 +22,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(var(--base) / 2) var(--base);
-  padding: 0px 5px;
+  // padding: 0px 5px;
 }
+
 
 .logo {
   width: 150px;
