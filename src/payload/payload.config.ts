@@ -10,6 +10,8 @@ import { slateEditor } from '@payloadcms/richtext-slate'
 import dotenv from 'dotenv'
 import path from 'path'
 import { buildConfig } from 'payload/config'
+// import plugin
+import { visualEditor } from 'payload-visual-editor'
 
 import Categories from './collections/Categories'
 import { Media } from './collections/Media'
@@ -28,6 +30,9 @@ import { Header } from './globals/Header'
 import { Settings } from './globals/Settings'
 import { priceUpdated } from './stripe/webhooks/priceUpdated'
 import { productUpdated } from './stripe/webhooks/productUpdated'
+
+// import styles
+import 'payload-visual-editor/dist/styles.scss'
 
 const generateTitle: GenerateTitle = () => {
   return 'My Store'
@@ -144,5 +149,8 @@ export default buildConfig({
       uploadsCollection: 'media',
     }),
     payloadCloud(),
+    visualEditor({
+      previewUrl: params => `https://localhost:3001/${params.locale}/pages/preview`,
+    }),
   ],
 })
