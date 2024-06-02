@@ -150,7 +150,11 @@ export default buildConfig({
     }),
     payloadCloud(),
     visualEditor({
-      previewUrl: params => `https://localhost:3001/${params.locale}/pages/preview`,
+      previewUrl: () => `http://localhost:3000/`,
+      previewWidthInPercentage: 70,
+      collections: {
+        [Pages.slug]: {},
+      },
     }),
   ],
 })
