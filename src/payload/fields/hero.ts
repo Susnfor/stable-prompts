@@ -66,7 +66,14 @@ export const hero: Field = {
       admin: {
         //show media field under these conditions
         // eslint-disable-next-line prettier/prettier
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'customHero', 'sideCustomHero', 'sideBorderCustomHero'].includes(type),
+        condition: (_, { type } = {}) =>
+          [
+            'highImpact',
+            'mediumImpact',
+            'customHero',
+            'sideCustomHero',
+            'sideBorderCustomHero',
+          ].includes(type),
       },
     },
   ],
