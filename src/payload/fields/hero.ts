@@ -45,7 +45,6 @@ export const hero: Field = {
           label: 'Side by Side with Border Hero',
           value: 'sideBorderCustomHero',
         },
-
       ],
     },
     richText({
